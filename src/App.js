@@ -1,24 +1,31 @@
-import React from 'react'
-import { Router, Link } from 'react-static'
-import { hot } from 'react-hot-loader'
+import React from "react";
+import { Router } from "react-static";
+import { hot } from "react-hot-loader";
 //
-import Routes from 'react-static-routes'
+import Routes from "react-static-routes";
 
-import './app.css'
+import "./global.css";
+import "./myGrid.css";
+import universal from "react-universal-component";
+
+const Navbar = universal(import(`./shared-components/navbar`), {
+  loading: () => null
+});
+// const Footer = universal(import(`./shared-components/footer`), {
+//   loading: () => null
+// });
+
+Navbar.preload();
+// Footer.preload();
 
 const App = () => (
   <Router>
-    <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
-      <div className="content">
+    <div className="content">
+      <Navbar />
         <Routes />
-      </div>
+      {/* <Footer /> */}
     </div>
   </Router>
-)
+);
 
-export default hot(module)(App)
+export default hot(module)(App);
