@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export default styled.footer`
-  padding: 3.5em 0;
-
+        
+  padding: 3em 0 2em 0;
+ background: rgba(0,0,70,0.8);
+  
   h4 {
     font-weight: 600;
     line-height: 27px;
@@ -65,10 +67,8 @@ export default styled.footer`
       }
     }
   }
-
-  .bar {
-    height: 1px;
-    background: #e5e5e5;
+  .bar{
+    border: 1px solid #ffffff0d;
     margin: 3em 0;
   }
 
@@ -99,6 +99,22 @@ export default styled.footer`
   }
 
   .sp {
+    
+    a{
+      display:inline-block;
+      img{
+        height: 25px;
+        width: 25px;
+        object-fit: contain;
+      }
+    }
+
+    p{
+      color: #ffffffd1;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: .5px;
+    }
     > div {
       margin: 1em 0;
 
@@ -107,4 +123,10 @@ export default styled.footer`
       }
     }
   }
+
+
+
+
+
+  
 `;

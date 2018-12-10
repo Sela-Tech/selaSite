@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-let count = 5;
+let count = 6;
 let linkheight = 68;
 let totalheight = count * linkheight;
 let borderColor = "#f7f7f7";
+const orange = "#F2994A";
+const black = "#222829";
 
 export default styled.div`
   position: fixed;
   right: 0;
-  top: 90px;
+  top: 100px;
   bottom: 0;
   z-index: ${props => (props.showSideMenu ? "11" : "-10000")};
   height: ${props => (props.showSideMenu ? "auto" : "0")};
@@ -36,7 +38,20 @@ export default styled.div`
         height: ${linkheight}px;
         line-height: ${linkheight}px;
         display: block;
+        color: ${orange};
         width: 100%;
+
+        &:hover{
+          color: ${black};
+        }
+      }
+
+      .btn{
+        color: white !important;
+
+        &:hover{
+          color: #fcfcfc !important;
+        }
       }
     }
   }

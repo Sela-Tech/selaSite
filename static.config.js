@@ -68,12 +68,10 @@ function shuffle(array) {
   return array;
 }
 
-
-
 export default {
   extractCssChunks: true,
   inlineCss: true,
-  siteRoot: "https://gifted-visvesvaraya-60b56c.netlify.com",
+  siteRoot: "https://sela-home.now.sh",
   webpack: (config, { stage }) => {
     if (stage === "prod") {
       config.entry = ["babel-polyfill", config.entry];
@@ -83,41 +81,21 @@ export default {
     return config;
   },
   getSiteData: () => ({
-    siteTitle: "Investiv Group | Home"
+    siteTitle: "Sela Labs | Blockchain Verification Platform"
   }),
   getRoutes: async () => {
+
     const posts = await getPosts();
     const reversed = posts.reverse();
-
-    const posts = await getPosts()
     return [
       {
         path: "/",
         component: "src/containers/Home",
         getData: () => ({
           posts
-        }),
-        children: reversed.map(post => ({
-          path: `/post/${post.data.slug}`,
-          component: "src/containers/Post",
-          getData: () => ({
-            post,
-            similar: shuffle(posts).filter((p, i) => {
-              if (p.data.slug !== post.data.slug) {
-                return i < 2;
-              }
-            })
-          })
-        }))
+        })
       },
-      {
-        path: '/',
-        component: 'src/containers/Home',
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About',
-      },
+   
       {
         path: '/blog',
         component: 'src/containers/Blog',
@@ -158,14 +136,11 @@ export default {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
-            <link
-              href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600"
-              rel="stylesheet"
-            />
-          
 
-            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+            <link rel='stylesheet' href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
+
+            <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+            <link rel="icon" href="/favicon.png" type="image/x-icon"/>
 
             {renderMeta.styleTags}
           </Head>
@@ -175,41 +150,3 @@ export default {
     }
   }
 };
-
-// export default {
-
-//   getSiteData: () => ({
-//     title: 'React Static with Netlify CMS',
-//   }),
-//   getRoutes: async () => {
-//     const posts = await getPosts()
-//     return [
-//       {
-//         path: '/',
-//         component: 'src/containers/Home',
-//       },
-//       {
-//         path: '/about',
-//         component: 'src/containers/About',
-//       },
-//       {
-//         path: '/blog',
-//         component: 'src/containers/Blog',
-//         getData: () => ({
-//           posts,
-//         }),
-//         children: posts.map(post => ({
-//           path: `/post/${post.data.slug}`,
-//           component: 'src/containers/Post',
-//           getData: () => ({
-//             post,
-//           }),
-//         })),
-//       },
-//       {
-//         is404: true,
-//         component: 'src/containers/404',
-//       },
-//     ]
-//   },
-// }

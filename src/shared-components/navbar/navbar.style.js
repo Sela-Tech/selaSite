@@ -1,40 +1,45 @@
 import styled from "styled-components";
 
-// export const Fade = styled.div`
-//   background: ${props => (props.showSideMenu ? "whitesmoke" : "transparent")};
-//   height: calc(100vh - 90px);
-//   transition: 150ms;
-//   position: fixed;
-//   right: 0;
-//   left: 0;
-//   top: 90px;
-//   bottom: 0;
-//   z-index: ${props => (props.showSideMenu ? "10" : "-10000")};
-// `;
+const height = "100px";
+const black = "#222829";
+const orange = "#F2994A";
 
 export default styled.nav`
+  @media(min-width: 768px){
+    #sm-margin{
+      margin-top: 7.5px;
+    }
+  }
+
   #logo-link {
-    height: 100%;
     display: inline-block;
     width: auto;
 
     img{
       object-fit:contain;
       object-position:center;
+      height: 50px;
     }
   }
 
-  height: 90px;
+  height: ${height};
   position: fixed;
-  background: transparent;
+  background: ${props => props.scrolledFromTop ? `white`:
+  props=>props.showSideMenu ? `white`: `transparent`
+};
+  
+  box-shadow:${props=> props.scrolledFromTop ? `
+  0 0 1px 0px #fff0e8`:`none`};
+  
   left: 0;
   right: 0;
+  transition : 250ms;
   top: 0;
   width: 100%;
   z-index: 1000;
 
   #right-menu {
-    height: 90px;
+    height: ${height};
   }
 
   #right-menu .inner > li,
@@ -48,13 +53,12 @@ export default styled.nav`
     display: inline-block;
     position: relative;
 
-    height: 90px;
+    height: ${height};
   }
 
   img#logo {
-    height: 66px;
-    width: 105px;
     display: block;
+    object-fit: contain;
   }
 
   #hamburger {
@@ -76,28 +80,34 @@ export default styled.nav`
     }
   }
 
+  
+
   li > a,
   #profile-menu {
-
-    font-family: ProximaNova;
-
-    font-weight: 100;
-    font-size: 15px;
+    font-family: Acumin Pro;
+    font-weight: 200;
+    font-size: 14.5px;
+    letter-spacing: .5px;
+    ${props => props.scrolledFromTop ? `
+    color: ${black};
+    &:hover: {
+      color: #999;
+    }
+    `:`
     color: white;
-
+    `}
+    &:hover{
+      color: ${orange};
+    }
     cursor: pointer;
     text-decoration: none;
     width: 100%;
     text-align: center;
-    color: white;
     display: block;
     position: relative;
     height: 40px;
-    line-height: 40px;
+    line-height: 44px;
 
-    &:hover {
-      color: #201D41;
-    }
 
     span {
       padding: 0 1em;
@@ -109,14 +119,12 @@ export default styled.nav`
   }
 
   .btn {
-
-background: linear-gradient(151.44deg, #C13C1E 0%, #F2994A 100%);
-box-shadow: 0px 2.5px 5px rgba(34, 40, 41, 0.15);
-border-radius: 5px;
-
+    background: linear-gradient(149.09deg, #C13C1E 0%, #F2994A 100%);
+    box-shadow: 0px 2.5px 5px rgba(34, 40, 41, 0.15);
+    border-radius: 2px;
     color: white;
     &:hover {
-      color: #201D41 !important;
+      color: ${black} !important;
     }
   }
 
