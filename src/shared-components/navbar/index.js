@@ -21,14 +21,16 @@ class Navbar extends React.PureComponent {
     super(props);
     this.state = {
       showSideMenu: false,
-      scrolledFromTop: false
+      scrolledFromTop: false,
+      window: {}
     };
   }
 
   componentWillMount() {
     if (typeof window !== "undefined") {
       this.setState({
-        isBigScreen: window.innerWidth > 1023
+        isBigScreen: window.innerWidth > 1023,
+        window: window
       });
       window.addEventListener("resize", this.resizeEventListener);
       window.addEventListener("scroll", this.scrollEventListener);
@@ -72,7 +74,7 @@ class Navbar extends React.PureComponent {
 
   render() {
     const { isBigScreen, showSideMenu,scrolledFromTop } = this.state;
-    const isHomePage =  typeof window !== undefined && window.location.pathname === "/";
+    const isHomePage =  this.state.window.location.pathname === "/";
     
     return (
       <NavbarStyle className="xs-12" 
