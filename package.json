@@ -27,7 +27,8 @@
     "react-router": "^4.2.0",
     "react-static": "^5.1.10",
     "react-universal-component": "^3.0.3",
-    "styled-components": "^3.4.8"
+    "styled-components": "^3.4.8",
+    "websocket": "^1.0.28"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
