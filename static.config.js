@@ -71,7 +71,7 @@ function shuffle(array) {
 export default {
   extractCssChunks: true,
   inlineCss: true,
-  siteRoot: "https://sela-home.now.sh",
+  siteRoot: "https://friendly-yonath-bb7f48.netlify.com",
   webpack: (config, { stage }) => {
     if (stage === "prod") {
       config.entry = ["babel-polyfill", config.entry];
