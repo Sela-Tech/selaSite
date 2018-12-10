@@ -9,9 +9,8 @@ export default ({ showSideMenu, dismiss }) => {
       <SmallScreen className="xs-12 fade" showSideMenu={showSideMenu}>
         <div className="xs-12" id="small-screen-nav">
             <li className="xs-12">
-                <NavLink to="#" onClick={()=>{
+                <NavLink to="#about" onClick={()=>{
                   dismiss()
-                  window.scroll(0, document.getElementById("map-side").scrollHeight)
                 }}>About</NavLink>
               </li>
               

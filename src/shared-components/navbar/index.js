@@ -72,7 +72,7 @@ class Navbar extends React.PureComponent {
 
   render() {
     const { isBigScreen, showSideMenu,scrolledFromTop } = this.state;
-    const isHomePage = window.location.pathname === "/";
+    const isHomePage =  typeof window !== undefined && window.location.pathname === "/";
     
     return (
       <NavbarStyle className="xs-12" 
