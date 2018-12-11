@@ -35,18 +35,34 @@ Navbar.preload();
 class Home extends React.Component{
 
 componentDidMount(){
-  // anime({
+
+  // let timeline = anime.timeline({
+  //   loop: true,
+  //   // elasticity: 900
+  // });
+
+  // timeline.add({
   //   targets: '#guy',
-  //   translateY: 50,
-  //   direction: 'alternate',
-  //   delay: 500,
-  //   translateY: -50,
-  //   loop: true
-  // });  
+  //   translateY: -35,
+  //   duration: 2000,
+  //   easing: 'linear',    
+  //   direction: "alternate"
+  // }).add
+
+
+
+  
+  if(typeof window !== undefined){
+    if(window.location.hash === "#about"){
+      document.getElementById("about").scrollIntoView()
+    }
+  }
 }
 
 render(){
+  
   const {posts} = this.props; 
+
   return (
   <React.Fragment>
     <Navbar isHomePage={true}/>

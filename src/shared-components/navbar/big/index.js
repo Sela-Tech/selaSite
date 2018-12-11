@@ -13,7 +13,10 @@ export default class BigScreenNavbar extends React.PureComponent {
             <div className="xs-12 inner">
               
               <li className="sm">
-                <NavLink to="/#about" >About</NavLink>
+                <NavLink to="/#about" onClick={()=>{
+                  document.getElementById("about").scrollIntoView();
+                  
+                }} >About</NavLink>
               </li>
               
               <li className="sm">

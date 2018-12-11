@@ -137,61 +137,6 @@ class Navbar extends React.PureComponent {
               />
             </React.Fragment>
           </div>
-          
-          {/* {isBigScreen ? (
-            <React.Fragment>
-              <div className="xs-12 sm-4 md-5">
-                <li className="xs-12" id="logo-li">
-                  <div className="c-w">
-                    <div className="c">
-                      <div className="xs-10">
-                        <NavLink to="/" id="logo-link">
-                          <img src={logoColored} alt="logo-plain" id="logo" />
-                        </NavLink>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-              <BigScreenNavbar className="xs-12 sm-8 md-7" />
-            </React.Fragment>
-          ) : (
-            <React.Fragment>
-              <div className="xs-12">
-                <li className="xs-12" id="logo-li">
-                  <div className="c-w">
-                    <div className="c">
-                      <div className="xs-9 l i-h">
-                      <div className="c-w">
-                        <div className="c">
-                          <NavLink to="/" id="logo-link">
-                            <img src={logoColored} alt="logo-plain" id="logo" />
-                          </NavLink>
-                        </div>
-                      </div>
-                      
-                      </div>
-                      <div className="xs-3 show-1023 r i-h">
-                      <div className="c-w">
-                        <div className="c">
-                          <Hamburger
-                              onClick={this.triggerSideMenu}
-                              showSideMenu={showSideMenu}
-                            />
-                        </div>
-                      </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-              <SmallScreenNavbar
-                showSideMenu={showSideMenu}
-                dismiss={this.triggerSideMenu}
-              />
-            </React.Fragment>
-          )} */}
         </div>
       </NavbarStyle>
     );

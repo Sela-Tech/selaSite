@@ -139,15 +139,49 @@ export default {
               name="viewport"
               content="width=device-width, initial-scale=1"
             />
+          <title>Sela Labs | Impact Project Verification Platform</title>
+         
+          <meta name="title" content="Sela Labs | Impact Project Verification Platform"/>
+         
+          <meta name="description" content="Sela is a platform that enables transparent execution and measurement for sustainable development goals, eliminating traditional barriers of entry for capital into the emerging world."/>
 
-            <link rel='stylesheet' href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
 
-            <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
-            <link rel="icon" href="/favicon.png" type="image/x-icon"/>
+          <meta property="og:type" content="website"/>
+          
+          <meta property="og:url" content="https://sela-labs.co/"/>
+          
+          <meta property="og:title" content="Sela Labs | Impact Project Verification Platform"/>
+          
+          <meta property="og:description" content="Sela is a platform that enables transparent execution and measurement for sustainable development goals, eliminating traditional barriers of entry for capital into the emerging world."/>
+          
+          <meta property="og:image"  content="/preview.png"/>
 
-            {renderMeta.styleTags}
+          <meta name="image"  content="/preview.png"/>
+
+          <meta property="twitter:card" content="/preview.png"/>
+          
+          <meta property="twitter:url" content="https://sela-labs.co/"/>
+          
+          <meta property="twitter:title" content="Sela Labs | Impact Project Verification Platform"/>
+          
+          <meta property="twitter:description" content="Sela is a platform that enables transparent execution and measurement for sustainable development goals, eliminating traditional barriers of entry for capital into the emerging world."/>
+          
+          <meta property="twitter:image" content="/preview.png"/>
+
+          <link rel='stylesheet' href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
+
+          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
+
+          <link rel="icon" href="/favicon.png" type="image/x-icon"/>
+
+          
+
+
+          {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
+
+          <script src="/full-story.js"/>
         </Html>
       );
     }

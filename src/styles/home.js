@@ -18,7 +18,15 @@ export const W = styled.div`
 
     position: absolute;
     z-index: 1;
-    top: 0;
+
+    @media(min-height: 500px){
+      top: 10px;
+    }
+
+    @media(max-height: 499px){
+      top: 75px;
+    }
+    
     left: 0;
     right: 0;
     bottom: 0;

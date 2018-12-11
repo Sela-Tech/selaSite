@@ -4,15 +4,15 @@ import styled from 'styled-components';
 export const WW = styled.div`
 
 position: relative;
-height: auto;
+height: 100%;
 min-height: calc(100vh - 100px);
 
 .main-blog-page{
     padding: 100px 0 0;
-    height: auto;
+    height: 100%;
 }
   #latest-posts{
-    height: auto;
+    height: 100%;
     padding: 4em 0;    
     
     h3{

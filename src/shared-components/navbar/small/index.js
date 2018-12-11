@@ -10,7 +10,8 @@ export default ({ showSideMenu, dismiss }) => {
         <div className="xs-12" id="small-screen-nav">
             <li className="xs-12">
                 <NavLink to="/#about" onClick={()=>{
-                  dismiss()
+                  dismiss();
+                  document.getElementById("about").scrollIntoView();
                 }}>About</NavLink>
               </li>
               
