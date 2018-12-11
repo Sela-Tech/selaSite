@@ -67,6 +67,7 @@ export const W = styled.div`
     letter-spacing: .35px;
     padding: 0;
     text-decoration:none;
+    display: inline-block;
 
   }
 

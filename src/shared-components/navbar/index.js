@@ -3,7 +3,6 @@ import NavbarStyle from "./navbar.style";
 import { NavLink } from "react-static";
 import logoColored from "../../assets/logo.colored.png";
 import universal from "react-universal-component";
-
 import Hamburger from "./hamburger";
 
 const BigScreenNavbar = universal(import(`./big`), {
@@ -21,26 +20,45 @@ class Navbar extends React.PureComponent {
     super(props);
     this.state = {
       showSideMenu: false,
-      scrolledFromTop: false,
-      window: {}
+      isBigScreen: true,
+      isHomePage: this.props.isHomePage,
+      scrolledFromTop: false
     };
   }
 
   componentWillMount() {
-    if (typeof window !== "undefined") {
+    if(typeof window === "undefined"){
+      let id = setInterval(()=>{
+        console.log("noticed it's undefined....one" );
+      
+        if(typeof window !== "undefined"  ){
+          
+          console.log("noticed it's now undefined....two");
+
+          this.setState({
+            isBigScreen: window.innerWidth > 1023,
+          });  
+
+          window.addEventListener("resize", this.resizeEventListener);
+          window.addEventListener("scroll", this.scrollEventListener);
+
+          clearInterval(id);
+       
+        }
+        
+      },200);
+     }
+     else {
       this.setState({
         isBigScreen: window.innerWidth > 1023,
-        isHomePage:  window.location.pathname === "/"
-     
-      });
+      });  
       window.addEventListener("resize", this.resizeEventListener);
       window.addEventListener("scroll", this.scrollEventListener);
-    
-    }
+     }
   }
 
   scrollEventListener = ()=>{
-    if (typeof window !== undefined) {
+    if (typeof window !== "undefined") {
       this.setState({
         scrolledFromTop: window.scrollY > 0
       });
@@ -48,7 +66,7 @@ class Navbar extends React.PureComponent {
   }
 
   resizeEventListener = () => {
-    if (typeof window !== undefined) {
+    if (typeof window !== "undefined") {
       this.setState({
         isBigScreen: window.innerWidth > 1023
       });
@@ -74,8 +92,9 @@ class Navbar extends React.PureComponent {
   }
 
   render() {
-    const { isBigScreen, showSideMenu,scrolledFromTop,isHomePage } = this.state;
-    
+    let { isBigScreen, showSideMenu,scrolledFromTop, isHomePage } = this.state;
+    isHomePage = isHomePage ?  isHomePage: false;
+    isBigScreen = isBigScreen ?  isBigScreen: false;
     return (
       <NavbarStyle className="xs-12" 
         scrolledFromTop={ isHomePage ? scrolledFromTop: true }

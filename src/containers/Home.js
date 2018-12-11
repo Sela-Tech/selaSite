@@ -30,25 +30,26 @@ const Navbar = universal(import(`../shared-components/navbar`), {
   loading: () => null
 });
 
+Navbar.preload();
 
 class Home extends React.Component{
 
 componentDidMount(){
-  anime({
-    targets: '#guy',
-    translateY: 50,
-    direction: 'alternate',
-    delay: 500,
-    translateY: -50,
-    loop: true
-  });  
+  // anime({
+  //   targets: '#guy',
+  //   translateY: 50,
+  //   direction: 'alternate',
+  //   delay: 500,
+  //   translateY: -50,
+  //   loop: true
+  // });  
 }
 
 render(){
   const {posts} = this.props; 
   return (
   <React.Fragment>
-    <Navbar/>
+    <Navbar isHomePage={true}/>
     <WW className="xs-12">
     <Head>
       <title> Sela Labs | Blockchain Verification Platform </title>

@@ -10,9 +10,12 @@ const Navbar = universal(import(`../shared-components/navbar`), {
   loading: () => null
 });
 
+// Navbar.preload();
+
 const Post = ( ({ post })  => {
   return <React.Fragment>
-  <Navbar isHomeScreen={false}/>
+  <Navbar isHomePage={false}/>
+  
   <WW className="xs-12">
   <Head>
     <title> Sela Labs | {post.data.title} </title>

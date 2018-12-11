@@ -23,21 +23,16 @@ class App  extends React.Component{
     }
   }
 
-  detect = ()=>{
+  componentDidMount(){
     this.id = setInterval(()=>{
       let navElem = document.querySelector("nav");
-      if(Boolean(navElem)){
+      if(Boolean(navElem) && typeof window !== undefined){
         this.setState({
           showBlanket: false
         })
         clearInterval(this.id);
       }
-    },200);
-   
-  }
-
-  componentDidMount(){
-    this.detect();
+    },500);
   }
 
   render(){

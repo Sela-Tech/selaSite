@@ -7,10 +7,11 @@ import universal from "react-universal-component";
 const Navbar = universal(import(`../shared-components/navbar`), {
   loading: () => null
 });
+// Navbar.preload();
 
 const Blog = ( ({ posts })  => {
   return <React.Fragment>
-<Navbar isHomeScreen={false}/>
+  <Navbar isHomePage={false}/>
   <WW className="xs-12">
   <Head>
     <title> Sela Labs | Blog </title>
