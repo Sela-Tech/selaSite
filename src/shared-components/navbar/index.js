@@ -26,29 +26,9 @@ class Navbar extends React.PureComponent {
     };
   }
 
-  componentWillMount() {
-    if(typeof window === "undefined"){
-      let id = setInterval(()=>{
-        console.log("noticed it's undefined....one" );
-      
-        if(typeof window !== "undefined"  ){
-          
-          console.log("noticed it's now undefined....two");
-
-          this.setState({
-            isBigScreen: window.innerWidth > 1023,
-          });  
-
-          window.addEventListener("resize", this.resizeEventListener);
-          window.addEventListener("scroll", this.scrollEventListener);
-
-          clearInterval(id);
-       
-        }
-        
-      },200);
-     }
-     else {
+  componentDidMount() {
+    console.log( typeof window, window.innerWidth)
+    if(typeof window !== "undefined" ){
       this.setState({
         isBigScreen: window.innerWidth > 1023,
       });  
@@ -100,8 +80,65 @@ class Navbar extends React.PureComponent {
         scrolledFromTop={ isHomePage ? scrolledFromTop: true }
         showSideMenu={ isHomePage ? showSideMenu: true }>
         <div className="xs-10 xs-off-1" id="sm-margin">
+          <div className="show-big xs-12">
+          <React.Fragment>
+              <div className="xs-12 sm-4 md-5">
+                <li className="xs-12" id="logo-li">
+                  <div className="c-w">
+                    <div className="c">
+                      <div className="xs-10">
+                        <NavLink to="/" id="logo-link">
+                          <img src={logoColored} alt="logo-plain" id="logo" />
+                        </NavLink>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <BigScreenNavbar className="xs-12 sm-8 md-7" />
+            </React.Fragment>
+        
+          </div>
 
-          {isBigScreen ? (
+          <div className="show-small xs-12">
+          <React.Fragment>
+              <div className="xs-12">
+                <li className="xs-12" id="logo-li">
+                  <div className="c-w">
+                    <div className="c">
+                      <div className="xs-9 l i-h">
+                      <div className="c-w">
+                        <div className="c">
+                          <NavLink to="/" id="logo-link">
+                            <img src={logoColored} alt="logo-plain" id="logo" />
+                          </NavLink>
+                        </div>
+                      </div>
+                      
+                      </div>
+                      <div className="xs-3 show-1023 r i-h">
+                      <div className="c-w">
+                        <div className="c">
+                          <Hamburger
+                              onClick={this.triggerSideMenu}
+                              showSideMenu={showSideMenu}
+                            />
+                        </div>
+                      </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <SmallScreenNavbar
+                showSideMenu={showSideMenu}
+                dismiss={this.triggerSideMenu}
+              />
+            </React.Fragment>
+          </div>
+          
+          {/* {isBigScreen ? (
             <React.Fragment>
               <div className="xs-12 sm-4 md-5">
                 <li className="xs-12" id="logo-li">
@@ -154,7 +191,7 @@ class Navbar extends React.PureComponent {
                 dismiss={this.triggerSideMenu}
               />
             </React.Fragment>
-          )}
+          )} */}
         </div>
       </NavbarStyle>
     );

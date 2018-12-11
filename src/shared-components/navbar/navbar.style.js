@@ -5,6 +5,28 @@ const black = "#222829";
 const orange = "#F2994A";
 
 export default styled.nav`
+
+@media(min-width: 1024px){
+  .show-big{
+    display: block;    
+  }
+
+  .show-small{
+    display: none;
+  }
+}
+
+@media(max-width: 1023px){
+  .show-big{
+    display: none;    
+  }
+
+  .show-small{
+    display: block;
+  }
+}
+
+
   @media(min-width: 768px){
     #sm-margin{
       margin-top: 7.5px;
