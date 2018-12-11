@@ -82,7 +82,7 @@ export default {
     return config;
   },
   getSiteData: () => ({
-    siteTitle: "Sela Labs | Blockchain Verification Platform"
+    siteTitle: "Sela Labs | Impact Project Verification Platform"
   }),
   getRoutes: async () => {
 

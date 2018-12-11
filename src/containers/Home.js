@@ -68,7 +68,7 @@ render(){
     <Navbar isHomePage={true}/>
     <WW className="xs-12">
     <Head>
-      <title> Sela Labs | Blockchain Verification Platform </title>
+      <title> Sela Labs | Impact Project Verification Platform </title>
     </Head>
 
     <W className="xs-12">
