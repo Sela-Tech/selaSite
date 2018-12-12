@@ -2,6 +2,7 @@ const fs = require("fs");
 const klaw = require("klaw");
 const path = require("path");
 const matter = require("gray-matter");
+const moment = require("moment");
 
 import { ServerStyleSheet } from "styled-components";
 import React, { Component } from "react";
@@ -93,7 +94,9 @@ export default {
         path: "/",
         component: "src/containers/Home",
         getData: () => ({
-          posts
+          posts: posts.sort(function (left, right) {
+            return moment.utc(left.timeStamp).diff(moment.utc(right.timeStamp))
+          })
         })
       },
    
@@ -127,9 +130,7 @@ export default {
     return html;
   },
   Document: class CustomHtml extends Component {
-
     render() {
-    
       const { Html, Head, Body, children, renderMeta } = this.props;
       return (
         <Html>
