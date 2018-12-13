@@ -49,26 +49,6 @@ function getPosts() {
   return getFiles();
 }
 
-function shuffle(array) {
-  var currentIndex = array.length,
-    temporaryValue,
-    randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
-
 export default {
   extractCssChunks: true,
   inlineCss: true,
@@ -88,14 +68,14 @@ export default {
   getRoutes: async () => {
 
     const posts = await getPosts();
-    const reversed = posts.reverse();
+    // const reversed = posts.reverse();
     return [
       {
         path: "/",
         component: "src/containers/Home",
         getData: () => ({
           posts: posts.sort(function (left, right) {
-            return moment.utc(left.timeStamp).diff(moment.utc(right.timeStamp))
+            return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
           })
         })
       },
@@ -106,7 +86,7 @@ export default {
         getData: () => ({
           posts,
         }),
-        children: reversed.map(post => ({
+        children: posts.map(post => ({
           path: `/post/${post.data.slug}`,
           component: 'src/containers/Post',
           getData: () => ({
