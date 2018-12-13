@@ -7,7 +7,7 @@ rating: '5'
 ---
 As Sela moves forward with its mission of building communities of transparency in the emerging world, some new members have joined the team in the past couple of weeks taking up roles in design, product management, engineering and business development. 
 
-![Dara Oke](/uploads/14295520_157816051330373_196082285_n.jpg "Dara Oke")
+![Dara Oke](/uploads/14295520_157816051330373_196082285_n-1-.jpg "Dara Oke")
 
 Dara Oke, a Product Designer and Manager brings with her a wealth of experience building and managing products at Microsoft, Twitter and Intel.
 
@@ -18,5 +18,3 @@ Dotun Longe, a Full-stack Software Engineer brings his wealth of experience havi
 ![Boma Josiah](/uploads/30601725_164462461051234_6714862895471001600_n.jpg "Boma Josiah")
 
  Sela also welcomed Boma Josiah, a Product Designer, to the team.
-
-![Boma Josiah](/uploads/30601725_164462461051234_6714862895471001600_n.jpg "Boma Josiah")
