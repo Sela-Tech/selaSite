@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Sela Platform Progress Report
-date: 2018-12-13T11:52:07.287Z
+date: 2018-12-11T15:35:07.287Z
 thumbnail: /uploads/96d2bc_0f5663a88d8540c688652e28e62c8e53_mv2.webp
 rating: '3'
 ---
