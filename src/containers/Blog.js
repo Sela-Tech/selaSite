@@ -16,6 +16,7 @@ const Blog = ( ({ posts })  => {
   <Head>
     <title> Sela Labs | Blog </title>
   </Head>
+
   <div className="main-blog-page xs-12">
   <div className="xs-12" id="latest-posts">
     <div className='xs-10 xs-off-1'>
@@ -35,6 +36,7 @@ const Blog = ( ({ posts })  => {
     </div>
   </div>
   </div>
+
 </WW>  
   </React.Fragment>
 });

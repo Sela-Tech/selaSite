@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const WW = styled.div`
 
 position: relative;
-height: 100%;
 min-height: calc(100vh - 100px);
 
 .main-blog-page{
@@ -26,6 +25,7 @@ min-height: calc(100vh - 100px);
     background: #FAFAFA;
 
     .inner{
+      min-height: 500px;
       @media(min-width:768px){
         width:95%;
       }    
