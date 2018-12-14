@@ -76,6 +76,8 @@ export default {
         getData: () => ({
           posts: posts.sort(function (left, right) {
             return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
+          }).filter((v,i)=>{
+            return i <= 2
           })
         })
       },
@@ -84,7 +86,9 @@ export default {
         path: '/blog',
         component: 'src/containers/Blog',
         getData: () => ({
-          posts,
+          posts: posts.sort(function (left, right) {
+            return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
+          })   
         }),
         children: posts.map(post => ({
           path: `/post/${post.data.slug}`,

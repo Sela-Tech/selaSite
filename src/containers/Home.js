@@ -24,7 +24,6 @@ import universal from "react-universal-component";
 import config from '../config';
 import particles_setup from "../json/particles.json";
 import Particles from 'react-particles-js';
-import anime from "animejs";
 
 const Navbar = universal(import(`../shared-components/navbar`), {
   loading: () => null
@@ -34,24 +33,7 @@ Navbar.preload();
 
 class Home extends React.Component{
 
-componentDidMount(){
-
-  // let timeline = anime.timeline({
-  //   loop: true,
-  //   // elasticity: 900
-  // });
-
-  // timeline.add({
-  //   targets: '#guy',
-  //   translateY: -35,
-  //   duration: 2000,
-  //   easing: 'linear',    
-  //   direction: "alternate"
-  // }).add
-
-
-
-  
+componentDidMount(){  
   if(typeof window !== undefined){
     if(window.location.hash === "#about"){
       document.getElementById("about").scrollIntoView()

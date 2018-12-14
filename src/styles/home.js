@@ -556,6 +556,8 @@ p,li{
     background: #FAFAFA;
 
     .inner{
+      min-height: 500px;
+    
       @media(min-width:768px){
         width:95%;
       }    
@@ -571,7 +573,7 @@ p,li{
         line-height: 30px;
         font-size: 15px;
         color: #222829;
-        font-weight: 600;
+        font-weight: 700;
         margin-top: 15px;
       }
 

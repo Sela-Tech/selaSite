@@ -41,7 +41,7 @@ min-height: calc(100vh - 100px);
         line-height: 30px;
         font-size: 15px;
         color: #222829;
-        font-weight: 600;
+        font-weight: 700;
         margin-top: 15px;
       }
 
