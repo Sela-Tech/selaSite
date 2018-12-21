@@ -14,7 +14,7 @@ class ErrorComp extends React.Component{
 render(){
   return (
   <React.Fragment>
-    <Navbar isHomePage={true}/>
+    <Navbar isHomePage={false}/>
     <WW className="xs-12">
     <Head>
       <title> Sela Labs | Page Not Found </title>

@@ -71,6 +71,11 @@ export default {
     // const reversed = posts.reverse();
     return [
       {
+        path:"/cocreate/apply",
+        component: "src/containers/Form.js"
+      },
+   
+      {
         path: "/",
         component: "src/containers/Home",
         getData: () => ({
