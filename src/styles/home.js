@@ -499,6 +499,7 @@ p,li{
         height: 200px;
         width: 100%;
         object-fit: cover;
+        filter: grayscale(100%);
       }
 
       img{
