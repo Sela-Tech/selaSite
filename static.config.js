@@ -164,14 +164,14 @@ export default {
 
           <link rel="icon" href="/favicon.png" type="image/x-icon"/>
 
-          
-
-
           {renderMeta.styleTags}
+          
           </Head>
           <Body>{children}</Body>
 
-          <script src="/full-story.js"/>
+          <script src= "/full-story.js" />
+          <script src= "/google-analytics.js" />
+
         </Html>
       );
     }
