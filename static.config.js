@@ -165,11 +165,12 @@ export default {
           <link rel="icon" href="/favicon.png" type="image/x-icon"/>
 
           {renderMeta.styleTags}
-          
+
           </Head>
           <Body>{children}</Body>
 
           <script src= "/full-story.js" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972615-1"></script>
           <script src= "/google-analytics.js" />
 
         </Html>
