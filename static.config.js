@@ -71,6 +71,10 @@ export default {
     // const reversed = posts.reverse();
     return [
       {
+        is404: true,
+        component: 'src/containers/404',
+      },
+      {
         path:"/cocreate/apply",
         component: "src/containers/Form.js"
       },
@@ -102,11 +106,7 @@ export default {
             post,
           }),
         })),
-      },
-      {
-        is404: true,
-        component: 'src/containers/404',
-      },
+      }
     ]
   },
   renderToHtml: async (render, Comp, meta) => {

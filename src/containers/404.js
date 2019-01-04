@@ -25,8 +25,8 @@ render(){
       <React.Fragment>
           <div className="xs-12" style={{ 
             height: "100vh", 
-            margin: '50px 0;',
-            padding: '0 1em;' 
+            margin: '50px 0',
+            padding: '0 1em' 
             }}>
             <div className="c-w t-c i-h">
               <div className="c t-c i-h">
