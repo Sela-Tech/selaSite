@@ -75,10 +75,9 @@ export default {
         component: 'src/containers/404',
       },
       {
-        path:"/cocreate/apply",
+        path:"/apply",
         component: "src/containers/Form.js"
       },
-   
       {
         path: "/",
         component: "src/containers/Home",
