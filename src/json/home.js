@@ -11,7 +11,7 @@ import p7 from "../assets/ppl/p7-min.png";
 import p8 from "../assets/ppl/p8-min.png";
 import p9 from "../assets/ppl/p9-min.png";
 import p10 from "../assets/ppl/p10-min.png";
-import p11 from "../assets/ppl/p11-min.png";
+import p11 from "../assets/ppl/p11-min.jpg";
 import p12 from "../assets/ppl/p12-min.png";
 import p13 from "../assets/ppl/p13-min.png";
 
@@ -33,7 +33,7 @@ export const LeaderShipInfo = [
     {name:"Ralf Kubli", pos:"Principal, Lakeside Partners AG", linkicon: lin, link:"", avatar: p8},
     {name:"Gustav Simonsson",pos:"Core Dev Ethereum, Orchid Labs", linkicon: twit, link:"", avatar: p9 },
     {name:"Brian Fox",pos:"Architect, GNU Bash, Orchid Labs", linkicon: lin,link:"", avatar:p10},
-    {name:"Gregor Binkert",pos:"Snr Advisor, Africa, World Bank", linkicon: lin,link:"", avatar: p11},
+    {name:"Vivina Berla",pos:"Investment Professional, Emeritus Governor LSE", linkicon: lin,link:"https://www.linkedin.com/in/vivina-berla-8529816/", avatar: p11},
     
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },

@@ -5,11 +5,11 @@ import { Route } from 'react-router-dom'
 
 import { cleanPath } from 'react-static'
 
-import t_0 from '../../src/containers/Form.js'
-import t_1 from '../../src/containers/Home'
-import t_2 from '../../src/containers/Blog'
-import t_3 from '../../src/containers/Post'
-import t_4 from '../../src/containers/404'
+import t_0 from '../../src/containers/404'
+import t_1 from '../../src/containers/Form.js'
+import t_2 from '../../src/containers/Home'
+import t_3 from '../../src/containers/Blog'
+import t_4 from '../../src/containers/Post'
 
 // Template Map
 global.componentsByTemplateID = global.componentsByTemplateID || [
@@ -22,7 +22,7 @@ t_4
 
 // Template Tree
 global.templateIDsByPath = global.templateIDsByPath || {
-  '404': 4
+  '404': 0
 }
 
 // Get template for given path
