@@ -9,10 +9,14 @@ rating: '5'
 
 Here are video previews of the state of the development of our web and mobile platforms as at the month of January, 2019. 
 
-## Web Platform Progress
+**Web Platform Progress**
+
+****
 
 <iframe width="100%" height="552" src="https://www.youtube.com/embed/toLE-NgStlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## **Mobile Progress**
+**Mobile Progress**
+
+****
 
 <iframe width="100%" height="552" src="https://www.youtube.com/embed/3ad4GDCimZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
