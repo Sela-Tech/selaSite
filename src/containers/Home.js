@@ -18,6 +18,7 @@ import huffpost from "../assets/icons/huffpost.svg";
 import bnc from "../assets/icons/bnc.svg";
 import kaw from "../assets/icons/kaw.svg";
 import vice from "../assets/icons/vice.svg";
+import forbes from "../assets/icons/forbes.png";
 import { truncate } from "../helpers/utils";
 
 import universal from "react-universal-component";
@@ -84,17 +85,21 @@ render(){
     <div className="xs-12 icons" id="about">
       <div className="xs-10 xs-off-1">
         <div className="xs-12 sm-2">
-          <h3>AS SEEN IN</h3>
+          <h3>AS SEEN ON</h3>
         </div>
         
         <div className="xs-12 sm-10">
           <div className="xs-6 sm-2">
             <img src={bbc} alt=""/>
           </div>
-          <div className="xs-6 sm-3">
+          <div className="xs-6 sm-2">
           <img src={kaw} alt=""/>
           </div>
-          <div className="xs-6 sm-3">
+          <div className="xs-6 sm-2">
+          <img src={forbes} alt=""/>
+          </div>
+          
+          <div className="xs-6 sm-2">
             <img src={huffpost} alt=""/>
           </div>
           <div className="xs-6 sm-2">
