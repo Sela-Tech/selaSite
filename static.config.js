@@ -89,7 +89,6 @@ export default {
           })
         })
       },
-   
       {
         path: '/blog',
         component: 'src/containers/Blog',
@@ -98,7 +97,10 @@ export default {
             return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
           })   
         }),
-        children: posts.map(post => ({
+        children: posts.sort(function (left, right) {
+          return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
+        })
+        .map(post => ({
           path: `/post/${post.data.slug}`,
           component: 'src/containers/Post',
           getData: () => ({

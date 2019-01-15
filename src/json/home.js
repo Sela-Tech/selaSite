@@ -21,6 +21,7 @@ import david from "../assets/ppl/david.jpg";
 import dotun from "../assets/ppl/dotun.jpg";
 
 export const LeaderShipInfo = [
+  
     {name: "Chi Nnadi", pos:"CEO", linkicon: lin,link:"https://www.linkedin.com/in/chinnadi/", avatar: p12 },
     {name: "Hassan Kane", pos:"CTO", linkicon: lin,link:"https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/", avatar:   p1 },
     {name:"Julie Bissinger", pos:"COO",linkicon:lin,link:"https://www.linkedin.com/in/juliebissinger/", avatar: p2 },
