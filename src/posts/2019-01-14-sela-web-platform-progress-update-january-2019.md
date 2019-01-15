@@ -3,7 +3,7 @@ layout: blog
 title: Sela Platform Development  Progress As At January 2019
 date: 2019-01-14T13:56:48.564Z
 thumbnail: /uploads/screen-shot-2019-01-14-at-5.10.17-pm.png
-rating: '13'
+rating: '5'
 ---
 Progress Report
 
