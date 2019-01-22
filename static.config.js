@@ -68,6 +68,11 @@ export default {
   getRoutes: async () => {
 
     const posts = await getPosts();
+
+    const sorted_by_date = posts.sort(function (left, right) {
+      return moment.utc(right.data.date).diff(moment.utc(left.data.date))
+    });
+
     // const reversed = posts.reverse();
     return [
       {
@@ -82,9 +87,7 @@ export default {
         path: "/",
         component: "src/containers/Home",
         getData: () => ({
-          posts: posts.sort(function (left, right) {
-            return moment.utc(right.data.date).diff(moment.utc(left.data.date))
-          }).filter((v,i)=>{
+          posts: sorted_by_date.filter((v,i)=>{
             return i <= 2
           })
         })
@@ -93,13 +96,9 @@ export default {
         path: '/blog',
         component: 'src/containers/Blog',
         getData: () => ({
-          posts: posts.sort(function (left, right) {
-            return moment.utc(right.timeStamp).diff(moment.utc(left.timeStamp))
-          })   
+          posts: sorted_by_date
         }),
-        children: posts.sort(function (left, right) {
-          return moment.utc(right.data.date).diff(moment.utc(left.data.date))
-        })
+        children: sorted_by_date
         .map(post => ({
           path: `/post/${post.data.slug}`,
           component: 'src/containers/Post',
