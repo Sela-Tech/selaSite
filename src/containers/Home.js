@@ -26,8 +26,6 @@ import config from '../config';
 import particles_setup from "../json/particles.json";
 import Particles from 'react-particles-js';
 
-import Lazyload from "react-lazyload";
-
 
 const Navbar = universal(import(`../shared-components/navbar`), {
   loading: () => null
@@ -59,10 +57,8 @@ render(){
 
     <W className="xs-12">
       <Particles params={particles_setup} />
-      <Lazyload>    
-        <video src={video} autoPlay={true} loop={true} muted={true} poster={poster}/>
-      </Lazyload>
 
+      <video src={video} autoPlay={true} loop={true} muted={true} poster={poster}/>
       <div className="xs-10 xs-off-1 i-h">
       <div className="c-w i-h">
         <div className="c t-l i-h">
@@ -136,10 +132,7 @@ render(){
           </div>
         </div>
         <div className="xs-12 sm-6 t-c">
-          <Lazyload>        
           <img src={guy} alt="" id='guy'/>
-          </Lazyload>
-
         </div>
         
       </div>
@@ -198,9 +191,7 @@ render(){
           <div className='inner'>
             <div className='c-w i-h'>
               <div className='c i-h'>
-              <Lazyload>
                 <img src={sdg} alt=''/>   
-                </Lazyload>
               </div>
             </div>
           </div>
@@ -427,10 +418,7 @@ render(){
               { LeaderShipInfo.map((info,i)=>{
                 return  <div className="xs-12 sm-6 md-3 x" key={i}>
                 <div className="inner xs-12">
-                <Lazyload>
                   <img className="main" src={info.avatar}/>
-                </Lazyload>
-
                   <div className="xs-12" id='push-down'>
                     <div className="xs-9 f-l">
                       <h4>{info.name}</h4>
