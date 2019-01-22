@@ -32,7 +32,7 @@ class App  extends React.Component{
         })
         clearInterval(this.id);
       }
-    },500);
+    },10);
   }
 
   render(){
