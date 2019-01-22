@@ -19,6 +19,8 @@ import boma from "../assets/ppl/boma.jpg";
 import ibrahim from "../assets/ppl/ibrahim.jpg";
 import david from "../assets/ppl/david.jpg";
 import dotun from "../assets/ppl/dotun.jpg";
+import jeba from "../assets/ppl/Jeba.jpg";
+import myra from "../assets/ppl/Myra.jpg";
 
 export const LeaderShipInfo = [
   
@@ -40,6 +42,9 @@ export const LeaderShipInfo = [
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
     {name:"Dotun Longe", pos: "Javascript Developer", linkicon: lin, link:"https://linkedin.com/in/oludotunlonge", avatar: dotun },
     {name:"David Abimbola",pos: "Mobile Developer", linkicon: lin, link:"https://www.linkedin.com/in/linux08/", avatar: david },
+    
+    {name:"Jeba", pos: "Computer Vision Research Intern", linkicon: lin, link:"", avatar: jeba },
+    {name:"Myra",pos: "Computer Vision Research Intern", linkicon: lin, link:"", avatar: myra },
     
     
   ];

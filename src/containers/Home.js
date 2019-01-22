@@ -44,7 +44,7 @@ componentDidMount(){
 
 render(){
   
-  const {posts} = this.props; 
+  const { posts } = this.props; 
 
   return (
   <React.Fragment>
@@ -324,18 +324,15 @@ render(){
                 <p>Human-centered design pilot</p>
               </div>
 
-
               <div className="sm-con offset">
                 <h4>May 2018</h4>
                 <p>Pilot test</p>
               </div>
 
-
               <div className="sm-con offset">
                 <h4>March 2019</h4>
                 <p>Begin Sustainability Int'l Niger Delta project</p>
               </div>
-
 
               <div className="sm-con offset">
                 <h4>July 2019</h4>
@@ -395,20 +392,17 @@ render(){
                 <p>Sela platform MVP</p>
               </div>
 
-
               <div className="sm-con offset">
                 <h4>Nov 2018</h4>
                 <p>Beta release</p>
               </div>
 
-          
               <div className="sm-con offset">
                 <h4>June 2019</h4>
                 <p>Utility token launch</p>
               </div>
 
             </div> 
-
           </div>
     
       </div>
@@ -419,7 +413,8 @@ render(){
 
             <h3 className="t-c"> Leadership </h3>
             <div className='xs-12'>
-              {LeaderShipInfo.map((info,i)=>{
+
+              { LeaderShipInfo.map((info,i)=>{
                 return  <div className="xs-12 sm-6 md-3 x" key={i}>
                 <div className="inner xs-12">
                   <img className="main" src={info.avatar}/>
@@ -437,7 +432,7 @@ render(){
                   </div>
                 </div>
               </div>
-              })}
+              }) }
           
 
             </div>
@@ -512,11 +507,10 @@ render(){
         </div>
       </div>
 
-        
-      <div className="xs-10 xs-off-1  bar" />
-        
-    </div>
 
+      <div className="xs-10 xs-off-1  bar" />
+
+    </div>
 
     </WW>
   </React.Fragment>
