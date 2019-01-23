@@ -43,8 +43,8 @@ export const LeaderShipInfo = [
     {name:"Dotun Longe", pos: "Javascript Developer", linkicon: lin, link:"https://linkedin.com/in/oludotunlonge", avatar: dotun },
     {name:"David Abimbola",pos: "Mobile Developer", linkicon: lin, link:"https://www.linkedin.com/in/linux08/", avatar: david },
     
-    {name:"Jeba", pos: "Computer Vision Research Intern", linkicon: lin, link:"", avatar: jeba },
-    {name:"Myra",pos: "Computer Vision Research Intern", linkicon: lin, link:"", avatar: myra },
+    {name:"Jeba Sania", pos: "Computer Vision Research Intern", linkicon: lin, link:"https://www.linkedin.com/in/jeba-sania", avatar: jeba },
+    {name:"Myra Ahmad",pos: "Computer Vision Research Intern", linkicon: lin, link:"https://www.linkedin.com/in/myra-ahmad-35a245149", avatar: myra },
     
     
   ];
