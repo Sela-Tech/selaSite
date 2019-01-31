@@ -6,25 +6,15 @@ import {LeaderShipInfo} from "../json/home";
 import poster from "../assets/building.png";
 import guy from '../assets/guy.png';
 import video from "../assets/video.mp4";
-
-import art1 from "../assets/illustrations/art1-min.png";
-import art2 from "../assets/illustrations/art2-min.png";
-import art3 from "../assets/illustrations/art3-min.png";
-
-import sdg from "../assets/sdgs-min.png";
-
-import bbc from "../assets/icons/bbc.svg";
-import huffpost from "../assets/icons/huffpost.svg";
-import bnc from "../assets/icons/bnc.svg";
-import kaw from "../assets/icons/kaw.svg";
-import vice from "../assets/icons/vice.svg";
-import forbes from "../assets/icons/forbes.png";
 import { truncate } from "../helpers/utils";
 
 import universal from "react-universal-component";
 import config from '../config';
 import particles_setup from "../json/particles.json";
 import Particles from 'react-particles-js';
+import moment from 'moment';
+
+import LazyLoad from 'react-lazyload';
 
 
 const Navbar = universal(import(`../shared-components/navbar`), {
@@ -58,7 +48,10 @@ render(){
     <W className="xs-12">
       <Particles params={particles_setup} />
 
-      <video src={video} autoPlay={true} loop={true} muted={true} poster={poster}/>
+      <video src={video} playsInline autoPlay={true} loop={true} muted={true} poster={poster}>
+        <source data-src={video} type="video/mp4"/>
+      </video>
+
       <div className="xs-10 xs-off-1 i-h">
       <div className="c-w i-h">
         <div className="c t-l i-h">
@@ -69,13 +62,14 @@ render(){
           <p> Sela is a platform that enables transparent execution and measurement of sustainable development projects, eliminating traditional barriers of entry for capital into the emerging world. </p>
           
           <div className='xs-12 sm-10 f-l'>
-                <div className="xs-12 sm-6">
-                  <a href={config.signup_route} target="_blank" id="orange" className="f-l"> Get Started </a>
-                </div>
-                <div className="xs-12 sm-6">
-                  <a href={config.whitepaper} target="_blank" id="deepblue" className="f-l">  Whitepaper </a>
-                </div>
+            <div className="xs-12 sm-6">
+              <a  rel="noopener noreferrer" href={config.signup_route} target="_blank" id="orange" className="f-l"> Get Started </a>
+            </div>
+            <div className="xs-12 sm-6">
+              <a rel="noopener noreferrer" href={config.whitepaper} target="_blank" id="deepblue" className="f-l">  Whitepaper </a>
+            </div>
           </div>
+          
           </div>
 
         </div>
@@ -91,23 +85,23 @@ render(){
         
         <div className="xs-12 sm-10">
           <div className="xs-6 sm-2">
-            <img src={bbc} alt=""/>
+            <div id='bbc' />
           </div>
           <div className="xs-6 sm-2">
-          <img src={kaw} alt=""/>
+          <div id='kaw'/>
           </div>
           <div className="xs-6 sm-2">
-          <img src={forbes} alt=""/>
+          <div id='forbes'/>
           </div>
           
           <div className="xs-6 sm-2">
-            <img src={huffpost} alt=""/>
+            <div id='huffpost'/>
           </div>
           <div className="xs-6 sm-2">
-          <img src={bnc} alt=""/>
+          <div id='bnc'/>
           </div>
           <div className="xs-6 sm-2">
-            <img src={vice} alt=""/>
+            <div id='vice'/>
           </div>
           
         </div>
@@ -132,7 +126,7 @@ render(){
           </div>
         </div>
         <div className="xs-12 sm-6 t-c">
-          <img src={guy} alt="" id='guy'/>
+          <img src={guy} alt='cartoon-guy' />
         </div>
         
       </div>
@@ -145,7 +139,7 @@ render(){
           <div className="xs-12 sm-4 box">
             <div className="xs-12 inner t-c">
               
-              <img src={art1} alt=""/>
+              <div id='art1'/>
               <h5>REAL TIME AUDIT</h5>
               <h2>Sela Portal</h2>
             
@@ -157,7 +151,7 @@ render(){
           <div className="xs-12 sm-4 box">
             <div className="xs-12 inner t-c">
               
-              <img src={art2} alt=""/>
+              <div id='art2'/>
               <h5>TRUSTED NETWORK</h5>
               <h2>Sela Token and Reputation Score</h2>
             
@@ -171,7 +165,7 @@ render(){
           <div className="xs-12 sm-4 box">
             <div className="xs-12 inner t-c">
               
-              <img src={art3} alt=""/>
+              <div id= 'art3'/>
               <h5>SECURE PAYMENTS</h5>
               <h2>AI-Powered Sela Wallet</h2>
             
@@ -191,7 +185,7 @@ render(){
           <div className='inner'>
             <div className='c-w i-h'>
               <div className='c i-h'>
-                <img src={sdg} alt=''/>   
+                <div id='sdg'/>   
               </div>
             </div>
           </div>
@@ -223,9 +217,7 @@ render(){
     <h3 className='t-c'>Roadmap</h3>
         
       <div className="xs-10 xs-off-1 sm-11 sm-off-1">
-        
           <div className='xs-12 big'>
-
             <div className="txt xs-12">
               
               <div className="sm-con offset">
@@ -233,18 +225,15 @@ render(){
                 <p>Human-centered design pilot</p>
               </div>
 
-
               <div className="sm-con offset">
                 <h4>May 2018</h4>
                 <p>Pilot test</p>
               </div>
 
-
               <div className="sm-con offset">
                 <h4>March 2019</h4>
                 <p>Begin Sustainability Int'l Niger Delta project</p>
               </div>
-
 
               <div className="sm-con offset">
                 <h4>July 2019</h4>
@@ -252,7 +241,6 @@ render(){
               </div>
             </div>
               
-
             <div className="xs-12" id="middle">
               <div className="sm-con">
                 <span className="sm point"/>
@@ -416,9 +404,9 @@ render(){
             <div className='xs-12'>
 
               { LeaderShipInfo.map((info,i)=>{
-                return  <div className="xs-12 sm-6 md-3 x" key={i}>
+                return <div className="xs-12 sm-6 md-3 x" key={i}>
                 <div className="inner xs-12">
-                  <img className="main" src={info.avatar}/>
+                 <LazyLoad once height={200}> <img className="main" src={info.avatar}/></LazyLoad>
                   <div className="xs-12" id='push-down'>
                     <div className="xs-9 f-l">
                       <h4>{info.name}</h4>
@@ -426,7 +414,7 @@ render(){
                     </div>
                     
                     <div className="xs-3 f-r">
-                      <NavLink to={info.link} className="linkicon">
+                      <NavLink to={info.link} rel="noreferrer" className="linkicon">
                         <img src = {info.linkicon} alt="" />
                       </NavLink>
                     </div>
@@ -448,11 +436,11 @@ render(){
         <div className='xs-12'>
           { posts.map(post => (
               <div className="xs-12 md-4 sm-6" key={post.data.slug}>
-                <div className="inner">
-                    <img src={post.data.thumbnail} alt=""/>
+                <div className="inner">   
+                    <LazyLoad once height={200}><img src={post.data.thumbnail} alt={post.data.slug}/></LazyLoad>
                     <h5>{post.data.title}</h5>
                     <p>{truncate( post.content )}</p>
-                    <NavLink to={`/blog/post/${post.data.slug}`}>Read More</NavLink>
+                    <NavLink to={`/single-post/${ moment(post.data.date).format("YYYY/MM/DD")}/${post.data.slug}`}>Read More</NavLink>
                 </div>
             </div>
           ))}

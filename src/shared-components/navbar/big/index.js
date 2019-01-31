@@ -20,7 +20,7 @@ export default class BigScreenNavbar extends React.PureComponent {
               </li>
               
               <li className="sm">
-                <a href={config.projects_route} target="_blank">
+                <a href={config.projects_route} rel="noopener noreferrer" target="_blank">
                 Projects
                 </a>
               </li>
@@ -33,13 +33,13 @@ export default class BigScreenNavbar extends React.PureComponent {
               </li>
               
               <li className="sm">
-                <a href={config.login_route} target="_blank">
+                <a href={config.login_route} rel="noopener noreferrer" target="_blank">
                 Log in
                 </a>
               </li>
              
               <li className="sm">
-                <a href={config.signup_route} target="_blank" className="btn"> 
+                <a href={config.signup_route} rel="noopener noreferrer" target="_blank" className="btn"> 
                 Get Started
                 </a>
               </li>

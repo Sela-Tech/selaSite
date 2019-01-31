@@ -16,7 +16,7 @@ export default ({ showSideMenu, dismiss }) => {
               </li>
               
               <li className="xs-12 ">
-                <a href={config.projects_route} target="_blank" onClick={dismiss}>
+                <a href={config.projects_route} rel="noopener noreferrer" target="_blank" onClick={dismiss}>
                 Projects
                 </a>
               </li>
@@ -29,13 +29,13 @@ export default ({ showSideMenu, dismiss }) => {
               </li>
               
               <li className="xs-12 ">
-                <a href={config.projects_route} target="_blank" onClick={dismiss}>
+                <a href={config.projects_route} rel="noopener noreferrer" target="_blank" onClick={dismiss}>
                 Log in
                 </a>
               </li>
             
               <li className="xs-12 ">
-                <a href={config.projects_route} target="_blank" onClick={dismiss} className="btn">
+                <a href={config.projects_route} rel="noopener noreferrer" target="_blank" onClick={dismiss} className="btn">
                 Get Started
                 </a>
               </li>

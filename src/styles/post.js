@@ -12,7 +12,7 @@ padding-top: 125px;
     height: auto;
 }
 
-.image{
+.image, img{
     width: 100%;
 }
 

@@ -1,7 +1,23 @@
 import styled from 'styled-components';
 
+import guy from '../assets/guy.png';
+import art1 from "../assets/illustrations/art1-min.png";
+import art2 from "../assets/illustrations/art2-min.png";
+import art3 from "../assets/illustrations/art3-min.png";
+
+import sdg from "../assets/sdgs-min.png";
+
+import bbc from "../assets/icons/bbc.svg";
+import huffpost from "../assets/icons/huffpost.svg";
+import bnc from "../assets/icons/bnc.svg";
+import kaw from "../assets/icons/kaw.svg";
+import vice from "../assets/icons/vice.svg";
+import forbes from "../assets/icons/forbes.png";
+
 
 export const W = styled.div`
+
+
   background: rgba(0, 0, 70, 0.8);
 
   height: 100vh;
@@ -51,7 +67,7 @@ export const W = styled.div`
   }
 
   p{
-    font-weight: 100;
+    font-weight: 200;
     margin: 1em 0 2em;
     font-family: Acumin Pro;
     line-height: 26.75px;
@@ -100,6 +116,74 @@ export const W = styled.div`
 `;
 
 export const WW = styled.div`
+img{
+  display: inline-block;
+}
+
+#art1, #art2, #art3{
+  height: 10rem;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  }
+
+#bbc, #kaw, #forbes, #vice, #bnc, #huffpost {
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 1em 1em;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  margin: 1em 0;
+} 
+
+#bbc{
+  background: url(${bbc});
+}
+
+#kaw{
+  background: url(${kaw}); 
+}
+
+#forbes{
+  background: url(${forbes});
+}
+
+#vice{
+  background: url(${vice});
+}
+
+#bnc{
+  background: url(${bnc});
+}
+
+#huffpost{
+  background: url(${huffpost});
+}
+
+#sdg{
+  background: url(${sdg});
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  height: 325px;
+  background-repeat: no-repeat;
+  width: 100%;
+
+}
+
+#art1{
+  background: url(${art1});
+}
+
+#art2{
+  background: url(${art2});
+}
+
+#art3{
+  background: url(${art3});
+}
 
 position: relative;
 

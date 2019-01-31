@@ -2,7 +2,7 @@
 layout: blog
 title: Sela at NeurIPS 2018
 date: 2018-12-09T01:19:00.000Z
-thumbnail: /uploads/one.webp
+thumbnail: /uploads/one.jpg
 rating: '4'
 ---
 Sela Labs was an active participant at the Conference on Neural Information Processing Systems conference (NeurIPS) which took place in Montréal, Canada through its CTO. 
@@ -15,4 +15,4 @@ This contribution was also complemented by Hassan's remarks at the dinner of the
 
 Many fruitful connections were made with actors interested in promoting AI for Good .
 
-![](/uploads/two.webp)
+![](/uploads/two.jpg)

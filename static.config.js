@@ -97,15 +97,24 @@ export default {
         component: 'src/containers/Blog',
         getData: () => ({
           posts: sorted_by_date
+        })
+      },
+      {
+        path: '/',
+        component: 'src/containers/Blog',
+        getData: () => ({
+          posts: sorted_by_date
         }),
         children: sorted_by_date
-        .map(post => ({
-          path: `/post/${post.data.slug}`,
-          component: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
+        .map(post => {
+          return {
+            path: `/single-post/${ moment(post.data.date).format("YYYY/MM/DD")}/${post.data.slug}`,
+            component: 'src/containers/Post',
+            getData: () => ({
+              post
+            })
+          }
+        })
       }
     ]
   },
@@ -124,11 +133,19 @@ export default {
       return (
         <Html>
           <Head>
-            <meta charSet="UTF-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
+         
+          <meta httpEquiv="Cache-control" content="public" max-age='86400'/>
+
+          <link rel="stylesheet" type="text/css" href="/global.css"/>
+          <link rel="stylesheet" type="text/css" href="/myGrid.css"/>
+
+          <meta charSet="UTF-8" />
+
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+          />
+
           <title>Sela Labs | Impact Project Verification Platform</title>
          
           <meta name="title" content="Sela Labs | Impact Project Verification Platform"/>
@@ -158,8 +175,6 @@ export default {
           
           <meta property="twitter:image" content="/preview.png"/>
 
-          <link rel='stylesheet' href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
-
           <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
 
           <link rel="icon" href="/favicon.png" type="image/x-icon"/>
@@ -167,11 +182,29 @@ export default {
           {renderMeta.styleTags}
 
           </Head>
-          <Body>{children}</Body>
+          <Body>
+        
+          <div className="blanket">
+            <div className='c-w i-h'>
+              <div className="c i-h t-c">
+              <div className="loader"/>
+              </div>
+            </div>
+          </div>
 
-          <script src= "/full-story.js" />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118972615-1"></script>
-          <script src= "/google-analytics.js" />
+          {children}
+
+          </Body>
+
+          <noscript id="deferred-styles">
+            <link rel="stylesheet" type="text/css" href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
+          </noscript>
+          
+          <script async src="./load-fonts.js"	/>
+
+          <script async defer src= "/full-story.js" />
+          <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-118972615-1"></script>
+          <script async defer src= "/google-analytics.js" />
 
         </Html>
       );
