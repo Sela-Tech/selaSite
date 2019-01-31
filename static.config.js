@@ -134,7 +134,7 @@ export default {
         <Html>
           <Head>
          
-          <meta httpEquiv="Cache-control" content="public" max-age='86400'/>
+          <meta httpEquiv="cache-control" content="public" max-age='86400'/>
 
           <link rel="stylesheet" type="text/css" href="/global.css"/>
           <link rel="stylesheet" type="text/css" href="/myGrid.css"/>
