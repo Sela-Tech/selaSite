@@ -181,6 +181,12 @@ export default {
 
           {renderMeta.styleTags}
 
+          <noscript id="deferred-styles">
+            <link rel="stylesheet" type="text/css" href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
+          </noscript>
+          
+          <script async src="./load-fonts.js"	/>
+
           </Head>
           <Body>
         
@@ -195,12 +201,6 @@ export default {
           {children}
 
           </Body>
-
-          <noscript id="deferred-styles">
-            <link rel="stylesheet" type="text/css" href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
-          </noscript>
-          
-          <script async src="./load-fonts.js"	/>
 
           <script async defer src= "/full-story.js" />
           <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-118972615-1"></script>

@@ -27,7 +27,7 @@ export const LeaderShipInfo = [
     {name: "Chi Nnadi", pos:"CEO", linkicon: lin,link:"https://www.linkedin.com/in/chinnadi/", avatar: p12 },
     {name: "Hassan Kane", pos:"CTO", linkicon: lin,link:"https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/", avatar:   p1 },
     {name:"Julie Bissinger", pos:"COO",linkicon:lin,link:"https://www.linkedin.com/in/juliebissinger/", avatar: p2 },
-    {name:"Kayode Ezike", pos:"Lead Engineer", linkicon:lin, link:"", avatar:p3 },
+    {name:"Kayode Ezike", pos:"Director Of R&D", linkicon:lin, link:"", avatar:p3 },
     {name:"Andrew Dell", pos:"Former CEO, HSBC Africa",linkicon:lin, link:"", avatar: p13 },
     {name:"Henri Erimodafe", pos:"Executive Director, UBS Nigeria",linkicon:lin, link:"", avatar: p4 },
     {name:"Tami Kesselman", pos:"Former Senior Advisor, UNDP SDG Impact Fund",linkicon:lin, link:"", avatar: p5 },
