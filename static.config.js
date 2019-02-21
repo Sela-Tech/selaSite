@@ -181,11 +181,11 @@ export default {
 
           {renderMeta.styleTags}
 
-          <noscript id="deferred-styles">
+          {/* <noscript id="deferred-styles"> */}
             <link rel="stylesheet" type="text/css" href="https://sela-tech.github.io/assets/fonts/stylesheet.css"/>
-          </noscript>
+          {/* </noscript> */}
           
-          <script async src="./load-fonts.js"	/>
+          {/* <script async src="./load-fonts.js"	/> */}
 
           </Head>
           <Body>
