@@ -21,7 +21,7 @@ import david from "../assets/ppl/david.jpg";
 import dotun from "../assets/ppl/dotun.jpg";
 import jeba from "../assets/ppl/Jeba.jpg";
 import myra from "../assets/ppl/Myra.jpg";
-
+import alex from "../assets/ppl/alex.jpg";
 export const LeaderShipInfo = [
   
     {name: "Chi Nnadi", pos:"CEO", linkicon: lin,link:"https://www.linkedin.com/in/chinnadi/", avatar: p12 },
@@ -37,6 +37,7 @@ export const LeaderShipInfo = [
     {name:"Gustav Simonsson",pos:"Core Dev Ethereum, Orchid Labs", linkicon: twit, link:"", avatar: p9 },
     {name:"Brian Fox",pos:"Architect, GNU Bash, Orchid Labs", linkicon: lin,link:"", avatar:p10},
     {name:"Vivina Berla",pos:"Investment Professional, Emeritus Governor LSE", linkicon: lin,link:"https://www.linkedin.com/in/vivina-berla-8529816/", avatar: p11},
+    {name:"Alex Kehaya",pos:"Business Development, Orchid Labs", linkicon: lin, link:"https://www.linkedin.com/in/afkehaya/", avatar: alex},
     
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
