@@ -37,6 +37,6 @@ We have 2 big commercial use cases for Q1-Q2 2019 that we're preparing for and b
 
 The journey continues, stay tuned for more updates, learning and insights !
 
-For reference, the public web portal can be accessed here: https://sela.now.sh/
+For reference, the public web portal can be accessed here: https://sela-test.now.sh/
 
 ![](/uploads/96d2bc_5b73decfea2849dca82a64715ef7d80e_mv2.jpg)

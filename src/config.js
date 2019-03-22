@@ -1,7 +1,7 @@
 export default {
-    projects_route: "https://sela.now.sh",
-    login_route: "https://sela.now.sh/signin",
-    signup_route: "https://sela.now.sh/signup",
+    projects_route: "https://sela-test.now.sh",
+    login_route: "https://sela-test.now.sh/signin",
+    signup_route: "https://sela-test.now.sh/signup",
     twitter:"#",
     instagram:"#",
     youtube:"#",
