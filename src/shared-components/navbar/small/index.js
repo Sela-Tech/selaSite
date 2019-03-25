@@ -15,11 +15,11 @@ export default ({ showSideMenu, dismiss }) => {
                 }}>About</NavLink>
               </li>
               
-              <li className="xs-12 ">
+              {/* <li className="xs-12 ">
                 <a href={config.projects_route} rel="noopener noreferrer" target="_blank" onClick={dismiss}>
                 Projects
                 </a>
-              </li>
+              </li> */}
             
               <li className="xs-12">
                 <NavLink to="/blog" onClick={dismiss}>Blog</NavLink>

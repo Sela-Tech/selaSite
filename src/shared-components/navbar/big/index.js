@@ -19,11 +19,11 @@ export default class BigScreenNavbar extends React.PureComponent {
                 }} >About</NavLink>
               </li>
               
-              <li className="sm">
+              {/* <li className="sm">
                 <a href={config.projects_route} rel="noopener noreferrer" target="_blank">
                 Projects
                 </a>
-              </li>
+              </li> */}
               
               <li className="sm">
                 <NavLink to="/blog">Blog</NavLink>
