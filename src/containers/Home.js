@@ -42,7 +42,7 @@ render(){
     <Navbar isHomePage={true}/>
     <WW className="xs-12">
     <Head>
-      <title> Sela Labs | Impact Project Verification Platform </title>
+      <title> Sela | Impact Project Verification Platform </title>
     </Head>
 
     <W className="xs-12">
@@ -59,7 +59,7 @@ render(){
           <h1> Let's Go. </h1>
           
           <div className="xs-12 sm-6 md-5">
-          <p> Sela is a platform that enables transparent execution and measurement of sustainable development projects, eliminating traditional barriers of entry for capital into the emerging world. </p>
+          <p> Sela is a project verification and measurement platform for sustainable development. </p>
           
           <div className='xs-12 sm-10 f-l'>
             <div className="xs-12 sm-6">
