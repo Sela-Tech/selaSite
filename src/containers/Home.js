@@ -56,10 +56,10 @@ render(){
       <div className="c-w i-h">
         <div className="c t-l i-h">
           
-          <h1> Let's Go. </h1>
+          <h1> Impact Verification Platform </h1>
           
           <div className="xs-12 sm-6 md-5">
-          <p> Sela is a project verification and measurement platform for sustainable development. </p>
+          <p> Sela is a digital tool that improves how capital enters and is deployed in Africa. </p>
           
           <div className='xs-12 sm-10 f-l'>
             <div className="xs-12 sm-6">
@@ -117,10 +117,10 @@ render(){
         <div className="xs-12 sm-11">
           <h2>About Sela</h2>
           <p>
-        The emerging world is the future. By 2050, Africa's population is projected to become 2.5 billion. Lack of trust, leadership, and community has led to costly capital that can't sustain. 
+         Sela is an impact verification platform that connects funders, project managers, and communities to bring transparency, measurement, and accountability to development projects and their stakeholders. 
           </p>
           <p>
-          Sela is eliminating traditional barriers of entry for capital into the emerging world. Sela introduces trust and transparency into transactions by tracking capital flows and rewarding trustworthy behavior.
+          Sela creates a digital environment allowing funders with capital to ensure projects are successful. Sela provides real-time automated information reporting by collecting verifiable data from the field
 
           </p>
           </div>
