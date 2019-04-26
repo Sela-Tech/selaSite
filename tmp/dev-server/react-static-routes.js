@@ -6,10 +6,11 @@ import { Route } from 'react-router-dom'
 import { cleanPath } from 'react-static'
 
 import t_0 from '../../src/containers/404'
-import t_1 from '../../src/containers/Form.js'
-import t_2 from '../../src/containers/Home'
-import t_3 from '../../src/containers/Blog'
-import t_4 from '../../src/containers/Post'
+import t_1 from '../../src/containers/Careers.js'
+import t_2 from '../../src/containers/Form.js'
+import t_3 from '../../src/containers/Home'
+import t_4 from '../../src/containers/Blog'
+import t_5 from '../../src/containers/Post'
 
 // Template Map
 global.componentsByTemplateID = global.componentsByTemplateID || [
@@ -17,7 +18,8 @@ global.componentsByTemplateID = global.componentsByTemplateID || [
 t_1,
 t_2,
 t_3,
-t_4
+t_4,
+t_5
 ]
 
 // Template Tree

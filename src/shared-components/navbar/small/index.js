@@ -25,7 +25,7 @@ export default ({ showSideMenu, dismiss }) => {
                 <NavLink to="/blog" onClick={dismiss}>Blog</NavLink>
               </li>
               <li className="xs-12">
-                <NavLink to="#" onClick={dismiss}> Contact</NavLink>
+                <NavLink to="/careers" onClick={dismiss}>Careers</NavLink>
               </li>
               
               <li className="xs-12 ">

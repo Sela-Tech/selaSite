@@ -28,7 +28,7 @@ export default class BigScreenNavbar extends React.PureComponent {
                 <NavLink to="/blog">Blog</NavLink>
               </li>
               <li className="sm">
-                <NavLink to="#contact"> Contact</NavLink>
+                <NavLink to="/careers"> Careers</NavLink>
               </li>
               
               <li className="sm">

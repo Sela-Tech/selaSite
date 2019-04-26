@@ -80,6 +80,10 @@ export default {
         component: 'src/containers/404',
       },
       {
+        path: "/careers",
+        component: "src/containers/Careers.js"
+      },
+      {
         path:"/apply",
         component: "src/containers/Form.js"
       },
