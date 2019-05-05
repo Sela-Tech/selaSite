@@ -1,5 +1,5 @@
 export default {
-    projects_route: "https://app.sela-labs.co",
+    projects_route: "https://sustainability-international.org",
     login_route: "https://app.sela-labs.co/signin",
     signup_route: "https://app.sela-labs.co/signup",
     twitter:"https://twitter.com/sela_labs?lang=en",
