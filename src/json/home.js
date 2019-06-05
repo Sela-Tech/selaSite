@@ -39,7 +39,7 @@ export const LeaderShipInfo = [
     
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
-    {name:"Dotun Longe", pos: "Fullstack Javascript Developer", linkicon: lin, link:"https://linkedin.com/in/oludotunlonge", avatar: dotun },
+    // {name:"Dotun Longe", pos: "Fullstack Javascript Developer", linkicon: lin, link:"https://linkedin.com/in/oludotunlonge", avatar: dotun },
     {name:"David Abimbola",pos: "Mobile Developer", linkicon: lin, link:"https://www.linkedin.com/in/linux08/", avatar: david },
     
     
