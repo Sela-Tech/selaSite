@@ -42,7 +42,7 @@ render(){
     <Navbar isHomePage={true}/>
     <WW className="xs-12">
     <Head>
-      <title> Sela | Impact Project Verification Platform </title>
+      <title> Sela | Impact Verification Platform </title>
     </Head>
 
     <W className="xs-12">
@@ -59,7 +59,7 @@ render(){
           <h1> Impact Verification Platform </h1>
           
           <div className="xs-12 sm-6 md-5">
-          <p> Sela is a digital tool that improves how capital enters and is deployed in Africa. </p>
+          <p> Sela is an impact enterprise building the digital infrastructure for a sustainable society. </p>
           
           <div className='xs-12 sm-10 f-l'>
             <div className="xs-12 sm-6">
@@ -117,10 +117,9 @@ render(){
         <div className="xs-12 sm-11">
           <h2>About Sela</h2>
           <p>
-         Sela is an impact verification platform that connects funders, project managers, and communities to bring transparency, measurement, and accountability to development projects and their stakeholders. 
-          </p>
+         Sela is building an ecosystem of tools to power the impact industry. A sustainable future requires understanding and integrating social and environmental awareness into the function of our society's products, services, and organizations. </p>
           <p>
-          Sela creates a digital environment allowing funders with capital to ensure projects are successful. Sela provides real-time automated information reporting by collecting verifiable data from the field
+          Private capital is forming at a rapid rate to solve systemic challenges, such as climate change, public infrastructure gaps, and income inequality. Global impact investment AUM has grown from $35.5 billion (2015) to $502 billion (2018) amongst 1,340 organizations. New financial instruments, including Development & Social Impact Bonds, are also being designed and deployed. This accumulation of capital needs accounting and measuring tools that factor social and environmental value while ensuring trusted collaboration among a diverse set of stakeholders.
 
           </p>
           </div>
@@ -140,10 +139,10 @@ render(){
             <div className="xs-12 inner t-c">
               
               <div id='art1'/>
-              <h5>REAL TIME AUDIT</h5>
+              <h5>TRANSPARENCY</h5>
               <h2>Sela Portal</h2>
             
-              <p> Sela uses blockchain and artificial intelligence to track all transactions and impact-driven measurements, fostering trust among project stakeholders.</p>
+              <p> The Portal is a web-based project management tool for operationalizing impact standards (e.g. ESG, IFC, IRIS). The tool enables transparency, real-time measurement and verification of capital projects and impact investment.</p>
               
             </div>  
           </div>
@@ -152,11 +151,12 @@ render(){
             <div className="xs-12 inner t-c">
               
               <div id='art2'/>
-              <h5>TRUSTED NETWORK</h5>
-              <h2>Sela Token and Reputation Score</h2>
+              <h5>IMPACT IDENTITY</h5>
+              <h2>Sela Citizen App</h2>
             
               <p>
-              Sela operationalizes impact methodologies by combining AI-powered objective data collection and stakeholder participation towards direct, measurable effects on the UN’s Sustainable Development Goals (SDGs).  </p>
+              The Citizen app is a mobile wallet that holds each Sela Citizen’s impact identity. The app enables direct communication for decentralized impact measurement and surveys, real-time collaboration amongst stakeholders, and monetization of impact data using digital currency, fiat and proprietary digital assets.
+</p>
               
             </div>  
           </div>
@@ -166,11 +166,12 @@ render(){
             <div className="xs-12 inner t-c">
               
               <div id= 'art3'/>
-              <h5>SECURE PAYMENTS</h5>
-              <h2>AI-Powered Sela Wallet</h2>
+              <h5>TRUSTED NETWORK</h5>
+              <h2>Sela Marketplace</h2>
             
               <p>
-              Sela identifies and publicly rewards the right leadership with the Sela Token. Sela also engages communities to track their performance, measure impact, and celebrate success using the Sela Wallet.</p>
+              The Marketplace is a trusted collection of impact investment opportunities for decentralized fundraising and collaboration. Sela Citizens collaborate to fund and execute these impact investments.
+</p>
             </div>  
           </div>
 
@@ -195,13 +196,13 @@ render(){
           <div className='inner' id="text">
             <div className='c-w i-h'>
               <div className='c i-h'>
-                <h3> Impact Measurement of Progress </h3>
-                <p>The Sela Platform provides the tools to scale impact measurement and progress against the UN's SDGs in the emerging world: </p>
+                <h3> Inclusive Measurement of Progress </h3>
+                <p>The Sela ecosystem empowers stakeholders across the many hierarchies and geographies of sustainable development while simultaneously operationalizing impact measurement. </p>
               
                 <ul>
-                  <li><span className='bar'/>Computer vision to analyze satellite and drone data</li>
+                  <li><span className='bar'/>Objective data tracking through blockchain and computer vision</li>
                   <li><span className='bar'/>Real-time reporting of capital and resource deployment</li>
-                  <li><span className='bar'/>Token incentivization of local stakeholders</li>
+                  <li><span className='bar'/>Incentivization mechanisms across stakeholders</li>
                 </ul>
               </div>
             </div>
@@ -222,22 +223,27 @@ render(){
               
               <div className="sm-con offset">
                 <h4>Oct 2017</h4>
-                <p>Human-centered design pilot</p>
+                <p>Human-centered design with ConsenSys</p>
               </div>
 
               <div className="sm-con offset">
                 <h4>May 2018</h4>
-                <p>Pilot test</p>
+                <p>First pilot</p>
+              </div>
+  
+                <div className="sm-con offset">
+                <h4>Mar 2019</h4>
+                <p>Initiated first sandbox use-case in Niger Delta</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>March 2019</h4>
-                <p>Begin Sustainability Int'l Niger Delta project</p>
+                <h4>Jan 2020</h4>
+                <p>Scale product availability</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>July 2019</h4>
-                <p>Begin $350m E. Africa affordable housing project</p>
+                <h4></h4>
+                <p></p>
               </div>
             </div>
               
@@ -279,25 +285,25 @@ render(){
           
             <div className="txt xs-12">
               <div className="sm-con first ">
-                <h4>April 2017</h4>
+                <h4>Apr 2017</h4>
                 <p>Company founded</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>March 2018</h4>
-                <p>Sela platform MVP</p>
+                <h4>Apr 2018</h4>
+                <p>Launched MVP and opened Lagos developer lab</p>
               </div>
 
 
               <div className="sm-con offset">
-                <h4>Nov 2018</h4>
-                <p>Beta release</p>
+                <h4>Oct 2018</h4>
+                <p>Began product-market sales fit research with cohort of researchers and industry leaders</p>
               </div>
 
           
               <div className="sm-con offset">
-                <h4>June 2019</h4>
-                <p>Utility token launch</p>
+                <h4>Oct 2019</h4>
+                <p>Private beta launch to additional sandboxes</p>
               </div>
 
             </div> 
@@ -310,7 +316,7 @@ render(){
               
               <div className="sm-con offset">
                 <h4>Oct 2017</h4>
-                <p>Human-centered design pilot</p>
+                <p>Human-centered design pilot with ConsenSys</p>
               </div>
 
               <div className="sm-con offset">
@@ -320,12 +326,12 @@ render(){
 
               <div className="sm-con offset">
                 <h4>March 2019</h4>
-                <p>Begin Sustainability Int'l Niger Delta project</p>
+                <p>Initiated first sandbox use-case in Niger Delta</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>July 2019</h4>
-                <p>Begin $350m E. Africa affordable housing project</p>
+                <h4>Jan 2020</h4>
+                <p>Scale product availability</p>
               </div>
             </div>
 
@@ -377,18 +383,18 @@ render(){
               </div>
 
               <div className="sm-con offset">
-                <h4>March 2018</h4>
-                <p>Sela platform MVP</p>
+                <h4>Apr 2018</h4>
+                <p>Launched MVP and opened Lagos developer lab</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>Nov 2018</h4>
-                <p>Beta release</p>
+                <h4>Oct 2018</h4>
+                <p>Began product-market sales fit research with cohort of researchers and industry leaders</p>
               </div>
 
               <div className="sm-con offset">
-                <h4>June 2019</h4>
-                <p>Utility token launch</p>
+                <h4>Oct 2019</h4>
+                <p>Private beta launch to additional sandboxes</p>
               </div>
 
             </div> 
