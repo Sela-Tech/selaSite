@@ -23,7 +23,7 @@ import alex from "../assets/ppl/alex.jpg";
 export const LeaderShipInfo = [
   
     {name: "Chi Nnadi", pos:"CEO", linkicon: lin,link:"https://www.linkedin.com/in/chinnadi/", avatar: p12 },
-    {name: "Hassan Kane", pos:"CTO", linkicon: lin,link:"https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/", avatar:   p1 },
+    // {name: "Hassan Kane", pos:"CTO", linkicon: lin,link:"https://www.linkedin.com/in/mohamed-hassan-kane-4b50328a/", avatar:   p1 },
     {name:"Julie Bissinger", pos:"COO",linkicon:lin,link:"https://www.linkedin.com/in/juliebissinger/", avatar: p2 },
     {name:"Kayode Ezike", pos:"Director Of R&D", linkicon:lin, link:"", avatar:p3 },
     {name:"Andrew Dell", pos:"Former CEO, HSBC Africa",linkicon:lin, link:"", avatar: p13 },
@@ -40,7 +40,7 @@ export const LeaderShipInfo = [
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
     // {name:"Dotun Longe", pos: "Fullstack Javascript Developer", linkicon: lin, link:"https://linkedin.com/in/oludotunlonge", avatar: dotun },
-    {name:"David Abimbola",pos: "Mobile Developer", linkicon: lin, link:"https://www.linkedin.com/in/linux08/", avatar: david },
+    // {name:"David Abimbola",pos: "Mobile Developer", linkicon: lin, link:"https://www.linkedin.com/in/linux08/", avatar: david },
     
     
   ];
