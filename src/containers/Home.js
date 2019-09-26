@@ -2,6 +2,7 @@ import React from 'react';
 import { withSiteData, Head, NavLink,withRouteData } from 'react-static';
 import {W,WW} from "../styles/home";
 import {LeaderShipInfo} from "../json/home";
+import {AdvisorInfo} from "../json/home";
 
 import poster from "../assets/building.png";
 import guy from '../assets/guy.png';
@@ -406,10 +407,30 @@ render(){
     <div className='xs-12' id='leadership'>
       <div className='xs-10 xs-off-1'>
 
-            <h3 className="t-c"> Leadership </h3>
+            <h3 className="t-c"> Team </h3>
             <div className='xs-12'>
 
               { LeaderShipInfo.map((info,i)=>{
+                return <div className="xs-12 sm-6 md-3 x" key={i}>
+                <div className="inner xs-12">
+                 <LazyLoad once height={200}> <img className="main" src={info.avatar}/></LazyLoad>
+                  <div className="xs-12" id='push-down'>
+                    <div className="xs-9 f-l">
+                      <h4>{info.name}</h4>
+                      <p>{info.pos}</p>
+                    </div>
+                    
+                    <div className="xs-3 f-r">
+                      <NavLink to={info.link} rel="noreferrer" className="linkicon">
+                        <img src = {info.linkicon} alt="" />
+                      </NavLink>
+                    </div>
+                  </div>
+
+            <h3 className="t-c"> Advisors </h3>
+            <div className='xs-12'>
+
+              { AdvisorInfo.map((info,i)=>{
                 return <div className="xs-12 sm-6 md-3 x" key={i}>
                 <div className="inner xs-12">
                  <LazyLoad once height={200}> <img className="main" src={info.avatar}/></LazyLoad>
