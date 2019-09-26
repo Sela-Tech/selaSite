@@ -626,6 +626,80 @@ p,li{
   }
 }
 
+#advisors{
+  padding: 3em 0 ;
+  background: white;
+
+      h3{    
+        font-family: Acumin Pro;
+        line-height: 60px;
+        font-size: 21px;
+        font-weight: 500;
+        color: #F2994A;
+      }
+
+  .x{
+    margin-bottom: 1em;
+    
+      .inner{
+        height: 340px;
+        background: #FAFAFA;
+        border-radius: 0px 0px 2px 2px;  
+      }
+
+      @media(min-width: 768px){
+        .inner {
+          width: 95%;
+        }
+      }
+
+      img.main{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+      }
+
+      img{
+        object-fit:cover;
+      }
+      
+      h4{ 
+        font-family: Acumin Pro;
+        line-height: 24px;
+        font-size: 17.5px;
+        color: #363795;    
+        font-weight: 500;    
+        margin-bottom: 3px; 
+      }
+      
+      p{
+        font-family: Acumin Pro;
+        line-height: 17px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #696F74;
+      }
+      
+      #push-down{
+        padding: 9%;
+      }
+
+      .linkicon{
+        height: 50px;
+        width: 50px;
+        float: right;
+        img{
+          object-fit: contain;
+          height: 25px;
+          width: 25px;
+          display: block;
+          float: right;
+        }
+      }
+  }
+}
+
   #latest-posts{
     
     padding: 4em 0;    
