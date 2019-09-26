@@ -426,6 +426,8 @@ render(){
                       </NavLink>
                     </div>
                   </div>
+                  </div>
+              </div>
 
             <h3 className="t-c"> Advisors </h3>
             <div className='xs-12'>
