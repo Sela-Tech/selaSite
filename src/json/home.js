@@ -31,6 +31,9 @@ export const LeaderShipInfo = [
     {name:"Kayode Ezike", pos:"Director Of R&D", linkicon:lin, link:"", avatar:p3 },
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
+  
+  ];
+export const AdvisorInfo = [
     
     {name:"Andrew Dell", pos:"Former CEO, HSBC Africa",linkicon:lin, link:"", avatar: p13 },
     {name:"Henry Erimodafe", pos:"Executive Director, UBS Nigeria",linkicon:lin, link:"", avatar: p4 },
