@@ -43,7 +43,7 @@ render(){
     <Navbar isHomePage={true}/>
     <WW className="xs-12">
     <Head>
-      <title> Sela | Impact Verification Platform </title>
+      <title> Sela | Impact Enterprise Platform </title>
     </Head>
 
     <W className="xs-12">
@@ -57,10 +57,10 @@ render(){
       <div className="c-w i-h">
         <div className="c t-l i-h">
           
-          <h1> Impact Verification Platform </h1>
+          <h1> Impact Enterprise Platform </h1>
           
           <div className="xs-12 sm-6 md-5">
-          <p> Sela is an impact enterprise building the digital infrastructure for a sustainable society. </p>
+          <p> Sela is the only end-to-end enterprise platform for managing the complete impact lifecycle using AI and blockchain. </p>
           
           <div className='xs-12 sm-10 f-l'>
             <div className="xs-12 sm-6">
@@ -118,7 +118,7 @@ render(){
         <div className="xs-12 sm-11">
           <h2>About Sela</h2>
           <p>
-         Sela is building an ecosystem of tools to power the impact industry. A sustainable future requires understanding and integrating social and environmental awareness into the function of our society's products, services, and organizations. </p>
+         Sela is the first end-to-end solution that manages the impact lifecycle using AI and blockchain. Sela’s enterprise SaaS platform provides a toolkit to manage, monitor, and measure impact lifecycle performance.</p>
           <p>
           Private capital is forming at a rapid rate to solve systemic challenges, such as climate change, public infrastructure gaps, and income inequality. Global impact investment AUM has grown from $35.5 billion (2015) to $502 billion (2018) amongst 1,340 organizations. New financial instruments, including Development & Social Impact Bonds, are also being designed and deployed. This accumulation of capital needs accounting and measuring tools that factor social and environmental value while ensuring trusted collaboration among a diverse set of stakeholders.
 
@@ -143,7 +143,8 @@ render(){
               <h5>TRANSPARENCY</h5>
               <h2>Sela Portal</h2>
             
-              <p> The Portal is a web-based project management tool for operationalizing impact standards (e.g. ESG, IFC, IRIS). The tool enables transparency, real-time measurement and verification of capital projects and impact investment.</p>
+              <p> The Portal is a web-based project management tool for operationalizing impact standards (e.g. ESG, IFC, IRIS). The tool enables transparency, real-time measurement and 
+              of capital projects and impact investment.</p>
               
             </div>  
           </div>
