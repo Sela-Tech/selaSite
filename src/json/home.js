@@ -27,8 +27,8 @@ export const LeaderShipInfo = [
     {name: "Chi Nnadi", pos:"CEO", linkicon: lin,link:"https://www.linkedin.com/in/chinnadi/", avatar: p12 },
     {name:"Alan Porter", pos:"CTO",linkicon:lin,link:"https://www.linkedin.com/in/alandporter/", avatar: alan },
     {name:"Rakesh Hegde", pos:"CPO",linkicon:lin,link:"https://www.linkedin.com/in/rakeshhegde/", avatar: rakesh },
-    {name:"Julie Bissinger", pos:"COO",linkicon:lin,link:"https://www.linkedin.com/in/juliebissinger/", avatar: p2 },
-    {name:"Kayode Ezike", pos:"Director Of R&D", linkicon:lin, link:"", avatar:p3 },
+    ///{name:"Julie Bissinger", pos:"COO",linkicon:lin,link:"https://www.linkedin.com/in/juliebissinger/", avatar: p2 },
+    ///{name:"Kayode Ezike", pos:"Director Of R&D", linkicon:lin, link:"", avatar:p3 },
     {name:"Boma Josiah",pos: "Product Designer", linkicon: lin, link:"https://www.linkedin.com/in/bomajosiah/", avatar: boma },
     {name:"Ibrahim Illiyasu",pos: "Backend Developer", linkicon: lin, link:"https://www.linkedin.com/in/ibrahim-iliyas-5a6a2b109/", avatar: ibrahim },
   
